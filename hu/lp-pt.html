@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no">
+	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+	<meta http-equiv="Pragma" content="no-cache">
+	<meta http-equiv="Expires" content="0">
+	<title>Complete a verificação!</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+	<div class="main">
+		
+		<h1>VERIFICAÇÃO HUMANA</h1>
+
+		<p><img src="robot.png" class="image" alt="Verificação"></p>
+
+		<p class="intro">Responda a esta pergunta rápida nos próximos <span class="timer red" id="timer"></span> segundos para verificar que você é humano.</p>
+
+		<div class="survey">
+			<div class="survey_question">
+				<h3>Você possui um telefone celular?</h3>
+				<div class="answers">
+					<a href="https://sc.dailyrewardsh.com/click/1">SIM</a>
+					<a href="#" onclick="event.preventDefault();var t=this;t.style.opacity='0.5';setTimeout(function(){window.location.href='https://www.google.com'},3000);">NÃO</a>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	<script src="jquery-3.6.0.min.js"></script>
+	<script src="main.js"></script>
+
+</body>
+</html>
