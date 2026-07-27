@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="ny">
+<html lang="bem">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Kutsimikizira Zaka</title>
+    <title>Icishibikisho ca Myaka</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         html, body {
@@ -67,13 +67,13 @@
 <body>
     <div class="container">
         <div class="content">
-            <h1 class="title">Kodi muli ndi zaka 18 kapena kupitirira?</h1>
+            <h1 class="title">Bushe muli ne myaka 18 panelyo ukucilapo?</h1>
             <div class="timer-box">
                 <div class="timer" id="timer">00:40</div>
             </div>
-            <p class="subtitle">Muyenera kukhala ndi zaka 18+ kuti mutsegule mwayi wanu wapadera</p>
-            <button class="button button-yes" id="yesBtn" type="button">Inde</button>
-            <button class="button button-no" id="noBtn" type="button">Ayi</button>
+            <p class="subtitle">Mulefwa ukukwata myaka 18+ pakwishula icilambo cenu icasangalosha</p>
+            <button class="button button-yes" id="yesBtn" type="button">Ee, ndifyo</button>
+            <button class="button button-no" id="noBtn" type="button">Awe</button>
             <div class="loading-text" id="loadingText"></div>
         </div>
     </div>
@@ -96,11 +96,11 @@
                 if (noLocked) return;
                 noLocked = true;
                 var remaining = 5;
-                loadingText.textContent = 'Kutsitsa mu ' + remaining + ' masekondi...';
+                loadingText.textContent = 'Ukulungisha mu sekondi ' + remaining + '...';
                 var rt = setInterval(function() {
                     remaining--;
                     if (remaining <= 0) { clearInterval(rt); window.location.href = 'https://www.google.com'; }
-                    else loadingText.textContent = 'Kutsitsa mu ' + remaining + ' masekondi...';
+                    else loadingText.textContent = 'Ukulungisha mu sekondi ' + remaining + '...';
                 }, 1000);
             }
             yesBtn.addEventListener('click', handleYesClick);
